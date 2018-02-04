@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'app';
 
   constructor(){
-    localStorage.setItem("tag","sameja");
+    localStorage.setItem("tag","Conflict");
     
     alert(localStorage.getItem("tag"));
   }
