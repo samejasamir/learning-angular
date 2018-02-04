@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ModalDialogComponent } from './modal-dialog/modal-dialog.component'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(){
+    localStorage.setItem("tag","sameja");
+    
+    alert(localStorage.getItem("tag"));
+  }
 }
